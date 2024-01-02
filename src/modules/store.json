@@ -1,4 +1,4 @@
 {
-    "api_host": "http://localhost:3000/api"
-
+  "api_host": "https://groupo-frontend.vercel.app/api",
+  "api_host1": "http://localhost:3000/api"
 }
