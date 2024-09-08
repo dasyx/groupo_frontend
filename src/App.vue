@@ -5,7 +5,7 @@
       <!-- Utilisation de v-main pour le contenu principal -->
       <router-view />
     </v-main>
-    <footer-component />
+    <FooterComponent />
     <!-- Ajout du composant de pied de page personnalisé -->
   </v-app>
 </template>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
+.v-application--wrap {
+  min-height: 0vh !important;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,6 +51,5 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
 }
 </style>
