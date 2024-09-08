@@ -67,4 +67,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.component-container {
+  display: flex;
+  justify-content: center;
+  margin: -2rem 5px;
+}
+.hero-body {
+  padding: 1rem 1.5rem;
+}
+</style>
