@@ -12,7 +12,7 @@
         {{ link }}
       </v-btn>
       <v-col class="text-center mt-4" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Groupomania</strong>
       </v-col>
     </v-row>
   </v-footer>
@@ -33,12 +33,17 @@ export default {
   background-color: #212121 !important;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  height: 100%;
+  height: 250px;
   width: 100%;
-  position: absolute;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  v-footer {
+    height: 260px;
+  }
 }
 </style>

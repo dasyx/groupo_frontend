@@ -21,10 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-.v-application--wrap {
-  min-height: 0vh !important;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -51,5 +47,18 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh; /* Assure que le contenu occupe toute la page */
+  display: flex;
+  flex-direction: column;
+}
+
+router-view {
+  flex: 1; /* Assure que le contenu principal occupe l'espace restant */
+}
+
+@media (max-width: 768px) {
+  .main-home {
+    padding-bottom: 60px; /* Ajuster pour tenir compte de la taille du footer sur mobile */
+  }
 }
 </style>

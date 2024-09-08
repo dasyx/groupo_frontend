@@ -76,11 +76,4 @@ export default {
 .hero-body {
   padding: 1rem 1.5rem;
 }
-.home {
-  background-image: url("../../public/img/earth_spaceview.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
 </style>
